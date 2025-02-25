@@ -16,7 +16,7 @@ public class UiManager : MonoBehaviour
         m_SplashScreenPanel.SetActive(true);
         m_ImageLoading.DOFillAmount(1.0f, m_LoadingDuration)
             .SetEase(Ease.Linear)
-            .SetLoops(1,LoopType.Restart)
+            .SetLoops(3,LoopType.Restart)
             .OnComplete(() =>
             {
                 m_SplashScreenPanel.SetActive(false);
